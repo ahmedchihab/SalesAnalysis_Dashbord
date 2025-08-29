@@ -1,6 +1,6 @@
 import pandas as pd
 
-file_path = "data/cleaned_sales_data_final.csv"
+file_path = "cleaned_sales_data_final.csv"
 df = pd.read_csv(file_path)
 
 
@@ -48,4 +48,5 @@ print(df.dtypes)
 df.to_csv(r"C:\Users\Galaxy\Downloads\SalesAnalysis_Portfolio\cleaned_sales_data_final.csv", index=False)
 
 print("✅ Données nettoyées et sauvegardées")
+
 
