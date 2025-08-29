@@ -1,8 +1,8 @@
 import pandas as pd
 
-# Chemin relatif
 file_path = "data/cleaned_sales_data_final.csv"
 df = pd.read_csv(file_path)
+
 
 
 # Aperçu des premières lignes
@@ -48,3 +48,4 @@ print(df.dtypes)
 df.to_csv(r"C:\Users\Galaxy\Downloads\SalesAnalysis_Portfolio\cleaned_sales_data_final.csv", index=False)
 
 print("✅ Données nettoyées et sauvegardées")
+
