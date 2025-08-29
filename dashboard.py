@@ -4,7 +4,7 @@ import plotly.express as px
 
 # ================================
 # 🔹 Charger les données
-file_path = "data/cleaned_sales_data_final.csv"
+file_path = "cleaned_sales_data_final.csv"
 df = pd.read_csv(file_path)
 
 # Assurer que la date est en datetime
@@ -69,5 +69,6 @@ top_products = (df_filtered.groupby("Product")['Quantity Ordered']
 fig_products = px.bar(top_products, x="Quantity Ordered", y="Product",
                       orientation="h", title="🔥 Top 10 Produits Vendus", text_auto=True)
 st.plotly_chart(fig_products, use_container_width=True)
+
 
 
